@@ -8,7 +8,7 @@ body {
   width: 300px;
   margin: 50px auto; /* 50px jarak atas/bawah auto menengahkan kiri/kanan*/
   padding: 20px;
-  background-color: red;
+  background-color: white;
   border-radius: 15px; /* Membuat sudut menjadi melengkung */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Efek bayangan */
    text-align:center;
@@ -17,4 +17,27 @@ body {
 .kartu-profil img {
   width: 150px;
   border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna*/
+}
+
+.daftar-proyek {
+  display: flex; 
+  justify-content: center;
+  gap: 20px;
+}
+
+.kartu-proyek {
+  background-color: #e9e9e9;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+@media (max-width: 600px) {
+.daftar-proyek {
+  flex-direction:column;
+  align-items: center;
+}
+.kartu-profil {
+  width: 90%
+}
 }
